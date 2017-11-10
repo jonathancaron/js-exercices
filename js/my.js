@@ -1,19 +1,18 @@
-alert("Dans les prochaines boites de dialogue, merci d'inscrire deux nombres à virgule");
-let nb1 = prompt("Premier nombre à virgule");
-let nb2 = prompt("Deuxième nombre à virgule");
-let nombre1 = parseFloat(nb1);
-let nombre2 = parseFloat(nb2);
+alert("Pour votre inscription, nous avons besoin de divers informations (la suite à la prochaine box)");
 
-function multiplication (a,b){
-  let result = nombre1*nombre2;
-  return result;
-};
 
-function division (a,b){
-  let result = nombre1/nombre2;
-  return result;
-};
+let pointure = prompt("Quel est votre pointure ? (cm)");
+let anneenaissance = prompt("Quel est votre année de naissance ?");
 
-let div = division(nombre1,nombre2);
+function calcul(pointure, anneenaissance){
+  let un = pointure*2;
+  let deux = un + 5;
+  let trois = deux * 50;
+  let quatre = trois - anneenaissance;
+  let cinq = quatre + 1766;
 
-document.getElementById('division').innerHTML = div;
+  return cinq;
+}
+
+let resultat = calcul(pointure,anneenaissance);
+alert(resultat);
