@@ -1,20 +1,21 @@
-let tab = [-2,1,4];
+function faireChoix(){
+  let choix = prompt("Veuillez choisir entre le nombre 1, 2 ou 3");
+  choix = Number(choix);
+  let resultat = "";
 
-function additionne(x){
-  return x + 2;
-}
-
-function soustrait(x){
-  let result = x - 2;
-  if(result >= 0){
-    return result;
+  switch (choix) {
+    case 1:
+      resultat = "Merci";
+      break;
+    case 2:
+      resultat = "Bonjour";
+      break;
+    case 3:
+      resultat = "Au revoir";
+      break;
+    default:
+      resultat = "Pardon, que voulez-vous ?";
   }
-  else{
-    return "Nombre négatif!";
-  }
-}
-
-function affiche(){
-  alert(soustrait(tab[0]));
-  alert(soustrait(tab.length));
+  console.log(resultat);
+  alert(resultat);
 }
