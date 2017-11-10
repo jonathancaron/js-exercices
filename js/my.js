@@ -1,13 +1,6 @@
-function surfaceRectagle(){
-  let largeur = prompt("Insérez la largeur (cm)");
-  let longueur = prompt("Insérez la longueur (cm)");
-  let surface = largeur * longueur;
-  alert("La surface est de : " + surface + " cm³");
-}
+function rayon(){
+  let rayon = prompt("Donnez un rayon de cercle (cm)");
+  let surface = 3.14159 * Math.sqrt(rayon);
+  return alert(surface);
 
-function periRectagle(){
-  let largeur = prompt("Insérez la largeur (cm)");
-  let longueur = prompt("Insérez la longueur (cm)");
-  let perimetre = (largeur+longueur)*2;
-  alert("Le périmètre est de : " + perimetre + " cm²");
 }
