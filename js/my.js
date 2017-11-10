@@ -9,4 +9,11 @@ function multiplication (a,b){
   return result;
 };
 
-alert(multiplication(nombre1,nombre2));
+function division (a,b){
+  let result = nombre1/nombre2;
+  return result;
+};
+
+let div = division(nombre1,nombre2);
+
+document.getElementById('division').innerHTML = div;
