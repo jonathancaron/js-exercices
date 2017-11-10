@@ -1,11 +1,10 @@
-let a = 3,
-    b = 2;
+let tab = [-2,1,4];
 
-function triple(x){
-  return x*3;
+function additionne(x){
+  return x + 2;
 }
 
 function affiche(){
-  alert(triple(a));
-  alert(triple(b));
+  alert(additionne(tab[0]));
+  alert(additionne(tab.length));
 }
